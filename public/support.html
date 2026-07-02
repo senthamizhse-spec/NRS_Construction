@@ -1,0 +1,133 @@
+  <!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- 01a) Meta tags & page title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to NRS Construction — your trusted partner in building dreams. With a commitment to quality and innovation, we transform visions into reality.">
+  <title>NRS Construction</title>
+  
+  <!-- 01b) External stylesheet links -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- ==================== 02 --- BODY & BACKGROUND ==================== -->
+<!-- 02a) Body element with flexbox layout & full-page background image -->
+<body class="d-flex flex-column min-vh-100" style="background-image: url('/back-end/public/images/Contact_Background.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
+  
+  <!-- ==================== 03 --- NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid px-4">
+      
+      <!-- 03a) Navbar Brand - Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/NRS_Logo1.png" alt="NRS Construction Logo" width="70" height="70" class="d-inline-block align-top">
+      </a>
+      
+      <!-- 03b) Mobile Toggle Button - Hamburger Menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- 03c) Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-2 fw-bold text-center margin-right-5">
+          <!-- Home Link (Active) -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+          </li>
+          <!-- About Link -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="about.html">About</a>
+          </li>
+          <!-- Services Link -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="services.html">Services</a>
+          </li>
+          <!-- Support Link -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="support.html">Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+   <!-- ==================== 04 --- MAIN CONTENT ==================== -->
+
+
+<main class="flex-fill">
+  <div class="container py-5">
+    <div class="row justify-content-center align-items-center">
+
+      <!-- Contact Column -->
+      <div class="col-md-5 mb-4">
+        <div class="contact-info text-center text-md-center">
+          <h2 class="display-4 fw-bold">Contact Us</h2>
+          <ul class="list-unstyled fs-5">
+            <li><i class="fas fa-phone "></i> +1234567890</li>
+            <li><i class="fas fa-envelope"></i> support@getstuffdone.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Send Message Column -->
+      <div class="col-md-7">
+        <div id="contact-form" class="p-4 rounded shadow" style="background-color:rgb(243, 124, 12)">
+          <h1 class="display-4 fw-bold">Send us a message</h1>
+
+          <form class="mt-4">
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="John" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-bold">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="+1234567890" minlength="7" maxlength="12" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="john123@gmail.com" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold">Message</label>
+              <textarea class="form-control" id="message" rows="7" placeholder="Write your message" maxlength="400" required></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-info btn-lg px-5">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+<!-- FOOTER -->
+  <!-- ==================== 05 --- FOOTER ==================== -->
+  <!-- 05a) Copyright Information -->
+  <footer class="text-white text-center py-3 mt-auto" style="background-color: rgb(207, 110, 30);">
+    <p class="mb-0">&copy; 2024 NRS Construction. All rights reserved.</p>
+  </footer>
+
+<script src="js/support.js"></script>
+
+</body>
+</html>
+  
+  
+  
+  
+    

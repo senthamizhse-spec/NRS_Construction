@@ -1,0 +1,55 @@
+# GSD To-Do App - Git Ignore File
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# PHP
+vendor/
+composer.lock
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Logs
+*.log
+logs/
+error_log
+
+# Configuration files with sensitive data
+config.php
+db-config.php
+.env
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (if you add Node.js later)
+node_modules/
+package-lock.json
+
+# Build files
+dist/
+build/

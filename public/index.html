@@ -1,0 +1,256 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- 01a) Meta tags & page title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to NRS Construction — your trusted partner in building dreams. With a commitment to quality and innovation, we transform visions into reality.">
+  <title>NRS Construction</title>
+  
+  <!-- 01b) External stylesheet links -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- ==================== 02 --- BODY & BACKGROUND ==================== -->
+<!-- 02a) Body element with flexbox layout & full-page background image -->
+<body class="d-flex flex-column min-vh-100" style="background-image: url('/back-end/public/images/Home_Background1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
+  
+  <!-- ==================== 03 --- NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid px-4">
+      
+      <!-- 03a) Navbar Brand - Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/NRS_Logo1.png" alt="NRS Construction Logo" width="70" height="70" class="d-inline-block align-top">
+      </a>
+      
+      <!-- 03b) Mobile Toggle Button - Hamburger Menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- 03c) Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-2 fw-bold text-center margin-right-5">
+          <!-- Home Link (Active) -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+          </li>
+          <!-- About Link -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="about.html">About</a>
+          </li>
+          <!-- Services Link -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="services.html">Services</a>
+          </li>
+          <!-- Support Link -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="support.html">Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    body {
+      font-family: Cambria, serif;
+      background: url('images/bg/home-wallpaper.jpg') center/cover fixed no-repeat;
+    }
+
+    .overlay-bg {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(3px);
+    }
+
+    .hero {
+      height: 420px;
+      background: url('images/bg/hero-main.jpg') center/cover no-repeat;
+    }
+
+    .hero-overlay {
+      background: rgba(0,0,0,0.55);
+      height: 100%;
+    }
+
+    .service-icon {
+      font-size: 40px;
+      color: #6c63ff;
+    }
+
+    .project-img {
+      height: 220px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero d-flex align-items-center text-white">
+  <div class="hero-overlay d-flex align-items-center w-100">
+    <div class="container text-center">
+      <h1 class="fw-bold display-5">Construction With a Personal Touch</h1>
+      <p class="lead">Modern, functional, and stylish renovations built with care and precision.</p>
+      <a href="services.html" class="btn btn-light btn-lg mt-3">View Our Services</a>
+    </div>
+  </div>
+</section>
+
+<div class="overlay-bg">
+
+<!-- ABOUT PREVIEW -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3" style="color:#6c63ff;">Welcome to NRS Construction</h2>
+    <p class="mx-auto" style="max-width:800px; font-size:1.15rem; line-height:1.7; color:#444;">
+      At NRS Construction, we turn outdated spaces into modern, functional, and stylish environments. 
+      Our renovation services cover kitchens, bathrooms, flooring, extensions, and complete home transformations. 
+      With a focus on quality, safety, and customer satisfaction, we deliver results that enhance both value and comfort. 
+    </p>
+    <a href="about.html" class="btn btn-outline-primary mt-3">Learn More</a>
+  </div>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4" style="color:#6c63ff;">Our Services</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow border-0 text-center p-4">
+          <div class="service-icon">🔨</div>
+          <h5 class="fw-bold mt-3">Renovations</h5>
+          <p>Kitchen, bathroom, laundry, flooring, extensions, and full home upgrades.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0 text-center p-4">
+          <div class="service-icon">🧱</div>
+          <h5 class="fw-bold mt-3">Repairs & Maintenance</h5>
+          <p>Wall repairs, plastering, patchwork, tile replacement, and general home fixes.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0 text-center p-4">
+          <div class="service-icon">🏡</div>
+          <h5 class="fw-bold mt-3">Outdoor Improvements</h5>
+          <p>Patio upgrades, paving, roofing repairs, and outdoor living enhancements.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4" style="color:#6c63ff;">Why Choose Us</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow border-0 p-4 text-center">
+          <h5 class="fw-bold">Reliable Service</h5>
+          <p>We deliver consistent, trustworthy workmanship every time.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0 p-4 text-center">
+          <h5 class="fw-bold">High‑Quality Work</h5>
+          <p>Precision, durability, and attention to detail in every project.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0 p-4 text-center">
+          <h5 class="fw-bold">Fair Pricing</h5>
+          <p>Transparent quotes with no hidden costs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RECENT PROJECTS PREVIEW -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4" style="color:#6c63ff;">Recent Projects</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="images/Gallery/Bathroom.jpg" class="project-img card-img-top">
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Bathroom Renovation</h5>
+            <p>Complete modern upgrade with new tiles and fixtures.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="images/Gallery/Patio.jpg" class="project-img card-img-top">
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Outdoor Patio</h5>
+            <p>New paving, roofing, and weather‑resistant finishes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="images/Gallery/Kitchen.jpg" class="project-img card-img-top">
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Kitchen Upgrade</h5>
+            <p>Cabinet replacement, benchtop installation, and modern layout.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="services.html" class="btn btn-outline-primary">See All Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3" style="color:#6c63ff;">Ready to Transform Your Home?</h2>
+    <p class="mx-auto" style="max-width:700px; font-size:1.15rem; color:#444;">
+      Contact us today for reliable, high‑quality renovation and maintenance services.
+    </p>
+    <a href="support.html" class="btn btn-primary btn-lg mt-3">Get a Free Quote</a>
+  </div>
+</section>
+<!-- FOOTER -->
+  <!-- ==================== 05 --- FOOTER ==================== -->
+  <!-- 05a) Copyright Information -->
+  <footer class="text-white text-center py-3 mt-auto" style="background-color: rgb(207, 110, 30);">
+    <p class="mb-0">&copy; 2024 NRS Construction. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
